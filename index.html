@@ -8,15 +8,15 @@
 <style>
     body {
         font-family: "Cairo", sans-serif;
-        background: #e9f7ef;
+        background: #f9fbff;
         margin: 0;
         padding: 0;
-        color: #156733;
+        color: #003b73;
         line-height: 1.8;
         position: relative;
     }
     
-    /* ===== الخلفية الشفافة مع الشعار ===== */
+    /* الخلفية الشفافة مع الشعار */
     body::before {
         content: "";
         position: fixed;
@@ -28,17 +28,18 @@
         background-size: 350px;
         background-repeat: no-repeat;
         background-position: center;
-        opacity: 0.11;
+        opacity: 0.08;
         z-index: -1;
     }
 
     header {
-        background: #1e7f3d;
+        background: linear-gradient(to right, #003b73, #0057b7);
         padding: 18px;
         text-align: center;
-        color: white;
+        color: #f8e38c;
         font-size: 24px;
         font-weight: bold;
+        border-bottom: 4px solid #d4af37;
     }
 
     .container {
@@ -46,24 +47,25 @@
     }
 
     .box {
-        background: rgba(255,255,255,.9);
+        background: rgba(255,255,255,.95);
         border-radius: 10px;
         padding: 20px;
         margin-bottom: 15px;
         box-shadow: 0 4px 10px rgba(0,0,0,.12);
+        border: 1px solid #d4af37;
     }
 
     .title {
         font-size: 22px;
         margin-bottom: 10px;
         font-weight: bold;
-        color: #1e7f3d;
+        color: #003b73;
     }
 
     .example-card {
-        background: #f6fff6;
+        background: #eef3ff;
         padding: 10px;
-        border: 1px solid #b8e6c5;
+        border: 1px solid #b2c8ff;
         border-radius: 6px;
         margin: 6px 0;
     }
@@ -75,15 +77,15 @@
     }
 
     th, td {
-        border: 1px solid #b8e6c5;
+        border: 1px solid #d4af37;
         padding: 10px;
         text-align: center;
         background: white;
     }
 
     th {
-        background: #1e7f3d;
-        color: white;
+        background: #003b73;
+        color: #fff;
     }
 
     /* مربع الفيديو */
@@ -94,6 +96,7 @@
         margin-bottom: 20px;
         box-shadow: 0 4px 10px rgba(0,0,0,.12);
         text-align: center;
+        border: 1px solid #d4af37;
     }
 
     iframe {
@@ -108,7 +111,7 @@
 <body>
 
 <header>
-    شرح اسم الفاعل واسم المفعول
+📘 شرح اسم الفاعل واسم المفعول
 </header>
 
 <div class="container">
@@ -166,7 +169,8 @@
 </div>
 
 </div>
-<!-- 🔹 زر الرجوع إلى المنصة (موحد لكل الدروس) -->
+
+<!-- 🔹 زر الرجوع إلى المنصة -->
 <div style="text-align:center; margin-top:50px; margin-bottom:30px;">
   <button 
     onclick="window.location.href='https://aass-2008-wq.github.io/'"
